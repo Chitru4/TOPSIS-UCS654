@@ -4,8 +4,8 @@ import sys
 
 def main():
     # Error Handling
-    # if len(sys.argv)!=5:
-    #     sys.exit('Wrong number of arguments provided (pls provide 4)')
+    if len(sys.argv)!=5:
+        sys.exit('Wrong number of arguments provided (pls provide 4)')
     if len(sys.argv)>2:
         try:
             df = pd.read_csv(sys.argv[1])
@@ -87,7 +87,7 @@ def main():
     print(df)
     if len(sys.argv) >=5:
         try:
-            df.to_csv(sys.argv[4])
+            df.to_csv(sys.argv[4],index=False)
         except:
             sys.exit('File not written due to error')
 
