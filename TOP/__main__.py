@@ -3,6 +3,7 @@ import numpy as np
 import sys
 
 def main():
+    # Error Handling
     if len(sys.argv)!=5:
         sys.exit('Wrong number of arguments provided (pls provide 4)')
     if len(sys.argv)>2:
@@ -22,8 +23,18 @@ def main():
         weights = [0.25 for i in range(n)]
         impact = ['-','+','+','+']
     else:
-        weights = list(map(float,sys.argv[2].split(',')))
-        impact = list(map(str,sys.argv[3].split(',')))
+        try:
+            weights = list(map(float,sys.argv[2].split(',')))
+            impact = list(map(str,sys.argv[3].split(',')))
+        except:
+            sys.exit("Please enter the correct values as the arguments and use commas to seperate the weights and the impacts")
+
+    for i in range(len(impact)):
+        if impact[i] != '+' or impact[i] != '-':
+            sys.exit("Please enter only '+' or '-' in impact(3rd argument)")
+
+    if (n != len(impacts)) or (len(impacts) != len(weights)):
+        sys.exit('Length of weight and length of impact should be equal to number of columns')
 
     sq_sum = [0 for i in range(n)]
     colmax = [0 for i in range(n)]
