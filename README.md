@@ -3,6 +3,7 @@
 ## Roll No. 102017040
 
 ## Requirements
-''' 
+``` 
 pip install pandas
-pip install openpyxl '''
+pip install numpy
+```
