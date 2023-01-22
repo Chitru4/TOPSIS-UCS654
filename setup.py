@@ -7,8 +7,8 @@ setup(
   description = 'This library is used to run TOPSIS on given data to rank items',   
   author = 'Chitraksh Kumar',                   
   author_email = 'chitraksh24@gmail.com',      
-  url = 'https://github.com/Chitru4/TOPSIS-UCS654', 
-  download_url = 'https://github.com/Chitru4/TOPSIS-UCS654/archive/refs/tags/v_0.1.tar.gz',   
+  url = 'https://github.com/Chitru4/Topsis-Chitraksh-102017040', 
+  download_url = 'https://github.com/Chitru4/Topsis-Chitraksh-102017040/archive/refs/tags/v_0.1.tar.gz',   
   keywords = ['TOPSIS', 'RANKING', 'PROJECT', 'UCS654'],   
   install_requires=[           
           'numpy',
