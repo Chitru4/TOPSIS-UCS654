@@ -4,7 +4,6 @@ import sys
 
 def main():
     # Error Handling
-    print(len(sys.argv))
     if len(sys.argv)!=5:
         sys.exit('Wrong number of arguments provided (pls provide 4)')
     if len(sys.argv)>2:
